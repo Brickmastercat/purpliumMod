@@ -2,6 +2,9 @@ package net.brickmastercat.purplium;
 
 import java.util.Random;
 
+import net.brickmastercat.purplium.init.purpliumItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -17,9 +20,15 @@ public class purplium {
 	// Constants
 	public static final String MOD_ID = "purplium";
 	public static final String MOD_NAME = "Purplium Resource Mod";
-	public static final String VERSION = "@VERSION@";
+	public static final String VERSION = "0.0";
 	public static final String DEPENDENCIES = "required-after:forge@[14.23.1.2555,)";
 	public static final String RESOURCE_PREFIX = MOD_ID + ":"; // purplium:
+	public static final CreativeTabs CREATIVE_TAB = new CreativeTabs("purpliumCreativeTab") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(purpliumItems.purplium_gem);
+		}
+	};
 	
 	// Local Variables
 	public static Random random = new Random();

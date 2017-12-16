@@ -1,0 +1,12 @@
+[
+{
+	"modid": "purplium_mod",
+	"name": "Brickmastercat's Purplium Gem Mod",
+	"description": "A mod that adds a new resource to the game that's better than diamonds.",
+	"version": "${version}",
+	"mcversion": "${mcversion}",
+	"url": "https://github.com/Brickmastercat/purpliumMod",
+	"authors": [ "Brickmastercat" ],
+	"credits": " "
+}
+]
